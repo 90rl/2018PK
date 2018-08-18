@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:onClick="onClickRelativeLayout"
+    android:padding="20dp"
+    app:hintTextAppearance="@style/TextAppearence.TextInputLayout.Blue"
+    tools:context="com.amazingteam.competenceproject.activity.SelectTagsActivity"
+    tools:showIn="@layout/activity_select_tags">
+
+    <LinearLayout
+        android:id="@+id/linearCancelSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundshape1"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onClickCancel"
+            android:padding="5dp"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/mainButtonsTextSize" />
+
+        <Button
+            android:id="@+id/btnSaveCloth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundshape1"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onClickSaveCloth"
+            android:padding="5dp"
+            android:text="@string/save_cloth"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/mainButtonsTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearCancelSave"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivClothPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:scaleX="1"
+            android:scaleY="1" />
+
+        <TextView
+            android:id="@+id/tvClothName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/cloth_name"
+            android:textSize="@dimen/mainButtonsTextSize" />
+
+        <TextView
+            android:id="@+id/tvAssignedTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/assigned_tags" />
+
+        <TextView
+            android:id="@+id/tvTagList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/temp_tag_list" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/clothNameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColorHint="@color/buttonsBackground"
+            app:hintTextAppearance="@style/TextAppearence.TextInputLayout.Blue">
+
+            <com.amazingteam.competenceproject.ui.EditTextNewEvents
+                android:id="@+id/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/add_cloth_name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAssignTags"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="@dimen/marginBetweenLinearTags"
+            android:background="@drawable/roundshape1"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="onClickAssignTags"
+            android:padding="5dp"
+            android:text="@string/assign_tags"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/mainButtonsTextSize" />
+    </LinearLayout>
+
+</RelativeLayout>

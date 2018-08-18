@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonsWidth">150dp</dimen>
+    <dimen name="buttonsHeight">60dp</dimen>
+    <dimen name="mainButtonsTextSize">17sp</dimen>
+    <dimen name="wardrobeButtonsTextSize">15sp</dimen>
+    <dimen name="listWidthWardrobeActivity">150dp</dimen>
+    <dimen name="listHeightWardrobeActivity">75dp</dimen>
+    <dimen name="listTopMarginWardrobeActivity">25dp</dimen>
+    <dimen name="fab_margin_bottom">48dp</dimen>
+    <dimen name="fab_margin_bottom_2">16dp</dimen>
+    <dimen name="fab_margin_end">16dp</dimen>
+    <dimen name="fab_margin_end_2">16dp</dimen>
+
+    <!-- wardrobe -->
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_cloth_radius">0dp</dimen>
+    <dimen name="cloth_image_height">160dp</dimen>
+    <dimen name="cloth_name_padding">10dp</dimen>
+    <dimen name="cloth_name_text">15sp</dimen>
+    <dimen name="tags_padding_bottom">5dp</dimen>
+    <dimen name="cloth_tags_text">12dp</dimen>
+    <dimen name="icon_cloth_overflow_width">30dp</dimen>
+    <dimen name="icon_cloth_overflow_height">30dp</dimen>
+    <dimen name="icon_cloth_overflow_margin_top">10dp</dimen>
+
+    <!-- photo -->
+    <dimen name="template_image_height">160dp</dimen>
+
+    <!--select tags-->
+    <dimen name="marginBetweenLinearTags">10dp</dimen>
+</resources>

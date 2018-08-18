@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    tools:context="com.amazingteam.competenceproject.activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDressMeUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/applogo_new"
+        android:scaleX="1.3"
+        android:scaleY="1.3"/>
+
+    <Button
+        android:id="@+id/buttonDressMeUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonsHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/roundshape1"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="click"
+        android:text="@string/buttonDressMeUp"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/mainButtonsTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWardrobe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWardrobe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonsHeight"
+        android:layout_alignEnd="@+id/buttonDressMeUp"
+        android:layout_below="@+id/buttonDressMeUp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/roundshape1"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="click"
+        android:text="@string/buttonWardrobe"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/mainButtonsTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

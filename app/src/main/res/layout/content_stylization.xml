@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundMain"
+    tools:context="com.amazingteam.competenceproject.activity.StylizationActivity"
+    tools:showIn="@layout/activity_stylization">
+
+    <RelativeLayout
+        android:id="@+id/weatherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/buttonsBackground"
+        android:padding="10dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperature"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/weatherIcon"
+                android:textColor="@color/WHITE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/weatherIcon" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/place"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/weatherIcon"
+                android:textColor="@color/WHITE"
+                app:layout_constraintBottom_toBottomOf="@+id/weatherIcon"
+                app:layout_constraintStart_toEndOf="@+id/weatherIcon"
+                app:layout_constraintTop_toTopOf="@+id/weatherIcon" />
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/weatherIcon"
+                android:textColor="@color/WHITE"
+                app:layout_constraintStart_toEndOf="@+id/weatherIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/rain_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonAddNewMeetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/fab_margin_bottom_2"
+        android:layout_marginEnd="@dimen/fab_margin_end_2"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/pink" />
+
+    <ListView
+        android:id="@+id/meetingsList"
+        android:layout_width="348dp"
+        android:layout_height="528dp"
+        android:layout_below="@+id/weatherLayout"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/destination"
+        tools:layout_editor_absoluteX="8dp" />
+
+</RelativeLayout>

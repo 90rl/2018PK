@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a1b1e</color>
+    <color name="colorPrimaryDark">#0e0f10</color>
+    <color name="colorAccent">#357CFF</color>
+    <color name="backgroundMain">#FFD200</color>
+    <color name="red">#FF0000</color>
+    <color name="buttonsBackground">#357CFF</color>
+    <color name="backgroundListView">#FFFFFF</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="defaultTextColour">#808080</color>
+    <color name="darkBlue">#0051cb</color>
+    <color name="whiteTransparent">#50ffffff</color>
+    <color name="buttonsTransparent">#c8357cff</color>
+
+    <!--wardrobe-->
+    <color name="clothNameText">#4c4c4c</color>
+    <color name="thumbnailBackground">#00ffffff</color>
+    <color name="cardBackground">#7babff</color>
+    <color name="cardBackground2">#357CFF</color>
+    <color name="cardBackground3">#3d81ff</color>
+    <color name="cardBackground4">#0059ff</color>
+    <color name="pink">#f048e7</color>
+</resources>
